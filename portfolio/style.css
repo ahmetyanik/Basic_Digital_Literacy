@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#erste_section>div {
+    display: flex;
+    justify-content: center;
+    margin-top: 59px;
+    margin-bottom: 49px;
+
+}
+
+#erste_section div img {
+    height: 161px;
+    width: 161px;
+    left: 107px;
+    top: 59px;
+    border-radius: 50%;
+    border: 1px solid #000000;
+
+}
+
+
+#erste_section div h2 {
+    color: #000000;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+#erste_section div h3 {
+    color: #5F5E5E;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+
+
+#zweite_section ul li {
+    background-color: #B9B9B9;
+    margin: 1px;
+    color: #FFFFFF;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+
+
+
+.title {
+    color: #6C6C6C;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#dritte_section .lebenslauf>div{
+    color: #6C6C6C;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lebenslauf_download{
+    text-decoration: none;
+    color: #129CA5;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;;
+}
