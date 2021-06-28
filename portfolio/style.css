@@ -6,8 +6,8 @@
 #erste_section>div {
     display: flex;
     justify-content: center;
-    margin-top: 59px;
-    margin-bottom: 49px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 
 }
 
@@ -120,3 +120,11 @@ ul li span {
     font-size: 2rem;
 }
 
+a{
+    text-decoration: none !important;
+}
+
+
+.kontakt_links>a>li{
+    color: #129CA5;
+}
