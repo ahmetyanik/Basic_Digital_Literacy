@@ -1,0 +1,27 @@
+label{
+    display: block;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+textarea{
+    width: 100%;
+}
+
+.checkbox label{
+
+    display: inline;
+}
+
+
+button[type=submit]{
+    background-color: blue;
+    color: white;
+    padding: .3em;
+    border-radius: .5em;
+    border:0;
+
+}
+
+
