@@ -11,71 +11,76 @@
 
 <body style="min-height: 100vh;">
     <form method="GET" action="https://dci-basic-server.herokuapp.com/">
-        <div>
-            <label for="name">Name:</label>
-            <input id="name" name="name" type="text" placeholder="Name">
-        </div>
 
+<fieldset>
+    <legend>Personal Infos</legend>
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" placeholder="Name">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+    </div>
+
+    <!--E-mail-->
+
+    <div>
+        <!-- Password-->
+
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+    </div>
+
+    <!--Checkbox-->
+
+    <div class="checkbox">
+        <label for="remember">Eingelogt bleiben</label>
+        <input type="checkbox" name="remember" id="remember" checked>
+    </div>
+
+    <div>
+        <label for="message">Nachricht:</label>
+        <input id="message" name="message" type="text" placeholder="Nachricht" value="Hello">
+
+    </div>
+
+    <div>
+        <label for="cv">lebenslauf</label>
+        <textarea name="cv" id="cv" ></textarea>
+    </div>
+
+    <div>
+        <h3>Zahlungsart</h3>
+        <label for="payment_paypal">Paypal</label>
+        <input type="radio" name="payment" id="payment_paypal" value="paypal">
+        <label for="payment_credit">Kreditkarte</label>
+        <input type="radio" name="payment" id="payment_credit" value="credit">
+        <label for="payment_bill">Rechnung</label>
+        <input type="radio" name="payment" id="payment_bill" value="rechnung">
+    </div>
+
+    <div>
+        <label for="country">Land</label>
+        <select name="country" id="country">
+            <option value="de">Deutschland</option>
+            <option value="at">Österreich</option>
+            <option value="ch">Schweiz</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="dob">Geburtsdatum</label>
+        <input type="date" name="dob" id="dob">
+    </div>
+
+    <div>
+        <button type="submit">Schicken</button>
+    </div>
+
+</fieldset>
         
-<!-- Password-->
-        <div>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password">
-        </div>
-
-        <!--E-mail-->
-
-        <div>
-
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-        </div>
-
-        <!--Checkbox-->
-
-        <div class="checkbox">
-            <label for="remember">Eingelogt bleiben</label>
-            <input type="checkbox" name="remember" id="remember" checked>
-        </div>
-
-        <div>
-            <label for="message">Nachricht:</label>
-            <input id="message" name="message" type="text" placeholder="Nachricht" value="Hello">
-
-        </div>
-
-        <div>
-            <label for="cv">lebenslauf</label>
-            <textarea name="cv" id="cv" ></textarea>
-        </div>
-
-        <div>
-            <h3>Zahlungsart</h3>
-            <label for="payment_paypal">Paypal</label>
-            <input type="radio" name="payment" id="payment_paypal" value="paypal">
-            <label for="payment_credit">Kreditkarte</label>
-            <input type="radio" name="payment" id="payment_credit" value="credit">
-            <label for="payment_bill">Rechnung</label>
-            <input type="radio" name="payment" id="payment_bill" value="rechnung">
-        </div>
-
-        <div>
-            <label for="country">Land</label>
-            <select name="country" id="country">
-                <option value="de">Deutschland</option>
-                <option value="at">Österreich</option>
-                <option value="ch">Schweiz</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="dob">Geburtsdatum</label>
-            <input type="date" name="dob" id="dob">
-        </div>
-
-        <div>
-            <button type="submit">Schicken</button>
-        </div>
 
 
 
