@@ -1,6 +1,6 @@
 * {
     margin: 0 ;
-    padding: 0 !important;
+    padding: 0;
 }
 
 #erste_section>div {
@@ -127,4 +127,18 @@ a{
 
 .kontakt_links>a>li{
     color: #129CA5;
+}
+
+
+button{
+    border: 0;
+    background-color:#129CA5 ;
+    color: white;
+    padding: 10px 25px;
+    border-radius:5% !important;
+}
+
+input{
+    border:0;
+    border:1px solid #129CA5;
 }
