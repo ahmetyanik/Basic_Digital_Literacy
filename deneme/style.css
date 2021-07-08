@@ -1,0 +1,33 @@
+*{
+ 
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    display: inline-block;
+
+}
+
+.zweite_box{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    display: inline-block;
+    
+}
+
+
+
+
+.dritte_box{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    display: inline-block;
+    
+}
+
+
+
