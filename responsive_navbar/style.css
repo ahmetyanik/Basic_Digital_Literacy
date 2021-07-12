@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    background-color: khaki;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em;
+    align-items: center;
+}
+
+nav div ul li{
+    list-style: none;
+}
+
+
+@media screen and (min-width:767px) {
+    nav div ul{
+        display: flex;
+        
+    }
+
+    nav div ul li{
+
+        padding: .5em;
+        font-size: 1.5em;
+        
+    }
+}
