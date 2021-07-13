@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item1 {
+            grid-area: H;
+            background-image: url("assets/item-one.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item4 {
+            grid-area: D;
+            background-image: url("/assets/item-four.jpeg");
+            background-position: center;
+            background-size: cover;
+            height: 10em;
+        }
+
+        .item6 {
+            grid-area: A;
+            background-image: url("/assets/item-six.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item2 {
+            grid-area: B;
+            background-image: url("/assets/item-two.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item8 {
+            grid-area: E;
+            background-image: url("/assets/item-eight.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item9 {
+            grid-area: J;
+            background-image: url("/assets/item-nine.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item3 {
+            grid-area: C;
+            background-image: url("/assets/item-three.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item5 {
+            grid-area: F;
+            background-image: url("/assets/item-five.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .item7 {
+            grid-area: G;
+            background-image: url("/assets/item-seven.jpeg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .grid-container {
+
+            display: grid;
+
+            grid-template-areas:
+                'D H C B'
+                'D H F B'
+                'A J I E'
+                'A J G E'
+                'A J G E';
+
+
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The grid-area Property</h1>
+
+    <p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+    <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on
+        the grid container.</p>
+
+    <p>Item1, is called "myArea" and will take up the place of two columns (out of five):</p>
+
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+
+</body>
+
+</html>
