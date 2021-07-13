@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .item1 {
+            grid-area: A;
+        }
+
+        .item2 {
+            grid-area: B;
+        }
+
+        .item3 {
+            grid-area: C;
+        }
+
+        .item4 {
+            grid-area: D;
+        }
+
+        .item5 {
+            grid-area: E;
+        }
+
+        .item6 {
+            grid-area: F;
+        }
+
+        .item7 {
+            grid-area: G;
+        }
+
+        .item8 {
+            grid-area: H;
+
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+
+                "A B H"
+                "A B H"
+                "E E D"
+                "F F G"
+                "C C C"
+
+            ;
+
+            grid-template-columns: minmax(100px, 200px) 1fr minmax(100px, 200px);
+            grid-template-rows: minmax(100px, 200px) 1fr minmax(100px, 200px);
+
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The grid-area Property</h1>
+
+    <p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+    <p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on
+        the grid container.</p>
+
+    <p>Item1, is called "myArea" and will take up the place of all five columns:</p>
+
+    <div class="grid-container">
+        <div class="item1">
+            <p>Item1, is called "myArea" and will take up the place of all five columns:</p>
+        </div>
+        <div class="item2">
+            <p>Item1, is called "myArea" and will take up the place of all five columns:</p>
+        </div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+    </div>
+
+</body>
+
+</html>
