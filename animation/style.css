@@ -1,0 +1,47 @@
+button{
+    border-radius: .5em;
+    border: none;
+    padding: 1em 3em;
+    transition: all 1s;
+    background-color: blue;
+    color: white;
+}
+
+button:hover{
+    background-color: olivedrab;
+    transform: scale(1.1);
+}
+
+button:hover{
+    background-color: olivedrab;
+    transform: translateX(20px);
+}
+
+button:hover{
+    background-color: olivedrab;
+    transform: rotate(90deg);
+}
+
+.close{
+    background: orangered;
+    width: 20px;
+    height: 100px;
+    position: relative;
+    transform: rotate(45deg) translateX(40px);
+    transform-origin: 10px 50px;
+    transition: all .5s;
+}
+
+.close::after{
+    content:"";
+    background: orangered;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: -40px;
+    top: 40px;
+}
+
+.close:hover{
+    transform: rotate(40deg);
+}
