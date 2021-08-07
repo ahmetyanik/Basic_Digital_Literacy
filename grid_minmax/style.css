@@ -1,0 +1,5 @@
+.container{
+    display: grid;
+    grid-template-columns: minmax(900px,1200px);
+    height: 900px;
+}
