@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px 250px 250px 1fr;
+    height: 100vh;
+    grid-template-areas: 
+    
+    "header header header header"
+    "article article  sidebar sidebar"
+    "article article sidebar sidebar"
+    "footer footer footer footer"
+    
+    ;
+}
+
+header{
+    grid-area: header;
+}
+
+article{
+    grid-area: article;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+
+footer{
+    grid-area: footer;
+}
+
+.sidebar>img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
