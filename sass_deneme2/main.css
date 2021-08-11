@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.kutu, body .container .box1, body .container .box2 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+  float: left;
+  margin: 10px;
+}
+
+body {
+  background-color: bisque;
+}
+
+body .container {
+  height: 1000px;
+  width: 900px;
+  margin: 0 auto;
+  background-color: blue;
+}
+
+body .container header {
+  height: 50px;
+  width: 900px;
+  background-color: red;
+}
+
+body .container header ul li {
+  float: left;
+}
+
+body .container header ul li a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  color: bisque;
+}
+
+body .container header ul li a:hover {
+  color: red;
+}
+
+body .container .kutular {
+  height: 500px;
+  width: 700px;
+  margin: 20px auto;
+  background-color: green;
+}
+
+body .container .box1 {
+  border-width: 4px;
+  border-style: dashed;
+  border-color: blue;
+}
+
+body .container .box2 {
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+}
+/*# sourceMappingURL=main.css.map */
