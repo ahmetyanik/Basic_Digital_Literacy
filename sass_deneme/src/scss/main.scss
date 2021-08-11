@@ -1,0 +1,39 @@
+// This is where you can import other stylesheets or write your scss code
+@use "../../node_modules/bootstrap/scss/bootstrap";
+
+@mixin border-generator($top-left,$top-right,$bottom-left,$bottom-right) {
+
+    border-top-left-radius: $top-left;
+    border-top-right-radius: $top-right;
+    border-bottom-left-radius: $bottom-left;
+    border-bottom-right-radius: $bottom-right;
+    
+}
+
+body{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    display: inline-block
+}
+
+.box1{
+    @extend .box;
+    background-color: red;
+    @include border-generator(20px, 30px, 40px, 50px)
+}
+
+.box2{
+    @extend .box;
+}
+
+.box3{
+    @extend .box;
+}
