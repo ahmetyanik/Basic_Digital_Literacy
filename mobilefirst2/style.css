@@ -41,6 +41,18 @@ main img {
     border-radius: 50%;
 }
 
+.desktop-photos{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aside-photo{
+    display: none;
+}
+
+
+
 main div {
     text-align: center;
 }
@@ -132,6 +144,10 @@ footer{
         width: 10vw;
         height: 10vw;
         border-radius: 10px;
+    }
+
+    .aside-photo{
+        display: block;
     }
 
 
