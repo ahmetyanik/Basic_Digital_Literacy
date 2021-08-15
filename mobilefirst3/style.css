@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+.logo-name{
+    display: flex;
+
+}
+
+header nav img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.rechten-seite ul{
+    display: flex;
+    list-style: none;
+}
+
+.rechten-seite ul li a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: white;
+}
+
+/* MAIN */
+
+.photo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.photo img{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+}
+
+.tutor h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+article{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article img{
+    width: 40vw;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* FOOTER  */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+    header nav{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .rechten-seite ul li a{
+        padding-left: 25px;
+    }
+
+    .logo-text{
+        flex-direction: row;
+    }
+
+    .logo-text img{
+        width: 20vw;
+        height: 20vw;
+        border-radius: 50%;
+    }
+    
+}
+
+@media screen and (min-width:1200px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav{
+        width: 80vw;
+    }
+
+    main {
+        width: 80vw;
+    }
+
+    .photo img{
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .tutor{
+        display: flex;
+    }
+
+    .logo-text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-text img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 10px;
+    }
+
+    footer{
+        padding: 20px;
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    
+}
