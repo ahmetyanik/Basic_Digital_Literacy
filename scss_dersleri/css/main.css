@@ -1,0 +1,31 @@
+body {
+  background-color: white;
+  margin: 10px 10px 0px 5px;
+}
+
+.main .main-content .p2 {
+  color: blue;
+}
+
+.p1 {
+  font-size: 2rem;
+  color: #ccc;
+  border: 2px solid red;
+}
+
+.p2 {
+  color: orange;
+}
+
+.p3 {
+  color: #b71c1c;
+}
+
+a {
+  font-size: 2rem;
+}
+
+a:hover {
+  color: #e57373;
+}
+/*# sourceMappingURL=main.css.map */

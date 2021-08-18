@@ -1,0 +1,47 @@
+$ana-renk: #ccc;
+$buyuk-font: 2rem;
+$background-color: white;
+$kirmizi-border: 2px solid red;
+$yardimci-renk: orange;
+$body-font: Helvetica, Arial, sans-serif;
+$body-margin: 10px 10px 0px 5px;
+$red-map: (
+  light: #e57373,
+  medium: #f44336,
+  dark: #b71c1c,
+);
+
+body {
+  background-color: $background-color;
+  margin: $body-margin;
+}
+
+.main {
+  .main-content {
+    .p2 {
+      color: blue;
+    }
+  }
+}
+
+.p1 {
+  font-size: $buyuk-font;
+  color: $ana-renk;
+  border: $kirmizi-border;
+}
+
+.p2 {
+  color: $yardimci-renk;
+}
+
+.p3 {
+  color: map-get($map: $red-map, $key: dark);
+}
+
+a{
+    font-size: $buyuk-font;
+
+    &:hover{
+        color: map-get($map: $red-map, $key: light );
+    }
+}
