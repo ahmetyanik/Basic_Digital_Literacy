@@ -1,0 +1,38 @@
+$bg-color:black;
+$text-color:rgb(26, 26, 172);
+
+
+@function double($value){
+    @return $value*2;
+}
+
+
+@function selectColor($select_background){
+
+    @if($bg-color==white){
+        $text-color:"black";
+        @return $text-color;
+    }
+
+    @else if($bg-color==black){
+        $text-color:white;
+        @return $text-color;
+    }
+    @else{
+        @return $text-color;
+    }
+}
+
+
+
+
+
+div{
+    color: selectColor($bg-color);
+    height: 300px;
+    width: double(300px);
+    background-color: $bg-color;
+    font-size: double(16px);
+}
+
+
