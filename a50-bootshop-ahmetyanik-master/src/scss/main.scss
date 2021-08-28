@@ -1,0 +1,99 @@
+@use "../../node_modules/bootstrap/scss/bootstrap" with (
+
+    $primary:#78c2ad,
+    $secondary:#f3969a,
+    $success: #56cc9d,
+    $border-radius: .4rem,
+    $alert-padding-y:0px,
+    $alert-padding-x:0px,
+    $headings-font-family:"Montserrat, -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+);
+
+
+
+$text-size:2em;
+$padding-left:20px;
+
+.breadcrumb{
+    display: flex;
+    align-items: center !important;
+    padding-left: $padding-left;
+    background-color: bootstrap.$secondary;
+}
+
+.breadcrumb ol li {
+    list-style: none;
+}
+
+.breadcrumb ol li a{
+    text-decoration: none;
+}
+
+.text-größe{
+    color: bootstrap.$secondary;
+    font-size: $text-size;
+    font-family: bootstrap.$headings-font-family !important;
+}
+
+.about {
+    padding-left: 20px;
+}
+
+.about-alt{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+}
+
+.btn{
+    background-color: bootstrap.$secondary;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+footer ul li a{
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px){
+
+    #carouselExampleIndicators{
+        width: 50vw;
+    }
+
+    .carousel-inner{
+        width: 50vw;
+    }
+
+    .alert{
+        width: 98vw !important;
+    }
+
+    footer{
+        width: 50vw;
+    }
+
+    .about-alt{
+        width: 45vw;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+    
+ 
+    #carouselExampleIndicators{
+        width: 30vw;
+        height: 30vw;
+    }
+    .carousel-inner{
+        width: 30vw;
+        height: 30vw;
+    }
+}
+

@@ -1,0 +1,93 @@
+/* TRANSITION
+
+
+Animationlarda transition özellikleri genelde
+bir nesneye hover effect verirken kullanilir.
+Böylece o nesnenin üzerine gelince o nesne sekil degistirir.
+
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+
+
+*/
+
+
+.birinci {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+  }
+
+  .birinci:hover {
+    width: 300px;
+  }
+
+
+  .ikinci {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+  }
+  
+  .ikinci:hover {
+    width: 300px;
+    height: 300px;
+  }
+
+
+  /* transition-timing-function */
+
+
+  .timing div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+  }
+  
+  #div1 {transition-timing-function: linear;}
+  #div2 {transition-timing-function: ease;}
+  #div3 {transition-timing-function: ease-in;}
+  #div4 {transition-timing-function: ease-out;}
+  #div5 {transition-timing-function: ease-in-out;} 
+
+  .timing div:hover{
+      width: 300px;
+  }
+
+
+  /* transition-delay*/
+
+  .delay {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 3s;
+ /*-->*/   transition-delay: 2s;
+  }
+
+  .delay:hover{
+      width: 300px;
+  }
+
+
+  /*Transform*/
+
+  .ucuncu {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s, transform 2s;
+  }
+
+
+  .ucuncu:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
