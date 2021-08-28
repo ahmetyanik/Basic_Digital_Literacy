@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+body .name {
+  font-size: 1rem;
+  border: 1px solid black;
+  color: #f85a5a;
+}
+
+body .name h1 {
+  background-color: blue;
+}
+
+body .name h1:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+body .button1 {
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: blue;
+  font-size: 3rem;
+  width: 200px;
+  margin-top: 10px;
+}
+
+body .button1:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+body .button2 {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: blue;
+  font-size: 2rem;
+  width: 200px;
+  margin-top: 10px;
+  color: khaki;
+  background-color: red;
+}
+
+body .button2:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+body .button2:hover {
+  background-color: green;
+  color: white;
+}
+
+body .text {
+  color: blue;
+  background-color: blue;
+}
+
+.button-basic, .button-green, .button-blue {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.button-green {
+  background-color: green;
+}
+
+.button-blue {
+  background-color: blue;
+}
+/*# sourceMappingURL=main.css.map */

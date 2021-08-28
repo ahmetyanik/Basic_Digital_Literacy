@@ -1,0 +1,120 @@
+@import "./variables.scss";
+
+$background-color:$farbe;
+$text-farbe:white;
+$font:1rem;
+$border-black:1px solid black;
+$red-map:(light:rgb(248, 90, 90),medium:rgb(158, 4, 4),dark:red);
+
+@function double($vert){
+    @return $vert*2;
+}
+
+@function farbe(){
+    @return green;
+}
+
+@function farbeSelector($background-color){
+
+    @if($background-color==white){
+        $text-farbe:black;
+        @return $text-farbe;
+
+    }@else if($background-color==black){
+
+        $text-farbe:white;
+        @return $text-farbe;
+
+    }
+
+    @else{ 
+        @return $farbe
+    } 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin base-button($color:red,$font:2rem) {
+
+    border: 2px solid $color;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: $background-color;
+    font-size: $font;
+    width: double(100px);
+    margin-top: 10px;
+
+    &:hover{
+        background-color: blue;
+        cursor: pointer;
+    }
+    
+}
+
+
+body{
+    height: 100vh;
+    .name{
+        font-size: $font;
+        border: $border-black;
+        color: map-get($map: $red-map, $key:light );
+
+        h1{
+            background-color: blue;
+            &:hover{
+                background-color: green;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .button1{
+        @include base-button(red,3rem);
+    }
+
+    .button2{
+        @include base-button(black);
+        color: khaki;
+        background-color: red;
+        &:hover{
+            background-color: farbe();
+            color: white;
+        }
+    }
+
+
+    .text{
+        color: farbeSelector($background-color);
+        background-color: $background-color;
+    }
+}
+
+
+
+.button-basic{
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.button-green{
+    @extend .button-basic;
+    background-color: green;
+}
+
+.button-blue{
+    @extend .button-basic;
+    background-color: blue;
+}
+
+
+
+
