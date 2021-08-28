@@ -1,8 +1,37 @@
-div {
+.isim {
   color: white;
   height: 300px;
   width: 600px;
   background-color: black;
   font-size: 5rem;
+}
+
+.button-base, .button-general, .blue-button, .green-button {
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.blue-button {
+  background-color: blue;
+  color: white;
+}
+
+.green-button {
+  background-color: green;
+  color: white;
+}
+
+.resim {
+  width: 300px;
+  height: 300px;
+  background-image: url("/images/foto.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=main.css.map */

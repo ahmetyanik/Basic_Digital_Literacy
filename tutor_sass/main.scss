@@ -1,8 +1,11 @@
-@import "_variables";
+@import '_variables';
+@import "design";
 
 
-$bg-color:black;
+$bg-color:$back-color;
 $text-color:rgb(26, 26, 172);
+$bg-image:url("/images/foto.png");
+
 
 
 @function double($value){
@@ -30,12 +33,60 @@ $text-color:rgb(26, 26, 172);
 
 
 
-div{
+.isim{
     color: selectColor($bg-color);
     height: 300px;
     width: double(300px);
     background-color: $bg-color;
     font-size: $font-size;
+}
+
+
+@mixin button-base {
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.button-base{
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.button-general{
+    @extend .button-base;
+}
+
+
+.blue-button{
+    @extend .button-base;
+    background-color: blue;
+    color: white;
+}
+
+.green-button{
+    @extend .button-base;
+    background-color: green;
+    color: white;
+}
+
+
+.resim{
+    width: 300px;
+    height: 300px;
+    background-image: $bg-image;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
