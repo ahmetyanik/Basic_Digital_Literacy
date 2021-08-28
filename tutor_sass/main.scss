@@ -1,3 +1,6 @@
+@import "_variables";
+
+
 $bg-color:black;
 $text-color:rgb(26, 26, 172);
 
@@ -32,7 +35,7 @@ div{
     height: 300px;
     width: double(300px);
     background-color: $bg-color;
-    font-size: double(16px);
+    font-size: $font-size;
 }
 
 
