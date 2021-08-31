@@ -1,0 +1,16 @@
+{
+  "name": "sass_tutor4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "sass ./src/scss/main.scss ./src/style/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "sass": "^1.38.2"
+  }
+}
